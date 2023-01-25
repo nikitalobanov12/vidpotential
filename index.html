@@ -4,156 +4,131 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VidPotential</title>
+    <title>vidpotential</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+    <script src="script.js" defer></script>
   </head>
-  <body class="fade-in">
+  <body>
+    <div class="wrapper">
+  
     <section id="landing-page">
-      <div class="header-bar">
-        <div class="header__name">logo/name</div>
-        <ul class="header__link--list">
-          <li class="header__link">
-            <a href="#About" class="header__link--anchor click">About</a>
-          </li>
-          <li class="header__link">
-            <a href="#examples" class="header__link--anchor click">Examples</a>
-          </li>
-          <li class="header__link">
-            <a href="#" class="header__link--anchor click">Contact</a>
+      <header class="navbar">
+        <figure>
+          <div class="logo">logo</div>
+        </figure>
+        <ul class="navigation">
+          <li class="navigation--point"><a href="#about">About</a></li>
+          <li class="navigation--point"><a href="#examples">Examples</a></li>
+          <li class="navigation--point contact">
+            <button class="contact--button">Contact</button>
           </li>
         </ul>
+      </header>
+      <div class="title__wrapper">
+        <h1 class="title"><span class="highlight">Vid</span> Potential</h1>
+        <h2 class="subtitle">
+          Skyrocket your Social Media Presence Using Your Short-Form Content's
+          Full Potential
+        </h2>
       </div>
-      <div class="title flex-column-center">
-        <div class="title__content">
-          <h1 class="title__header">Vid Potential</h1>
+    </section>
+    <section id="about">
+      <div class="title__wrapper">
+        <div class="youtube__player--wrapper">
+          <iframe class="youtube-player"
+            src="https://www.youtube-nocookie.com/embed/HA7Qt4Ts64Q"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
 
-          <p class="title__paragraph">
-            Skyrocket your Social Media Presence Using Your Short-Form Content's
-            Full Potential
+        </div>
+        <div class="about__paragraph">
+          <h2 class="about__header">Who is this for?</h2>
+          <p class="about__body">
+            Info Product Sellers, Coaches, Real Estate Agents, or anyone that
+            wants to increase MRR, predictably convert leads, and create a loyal
+            community of customers through short-form content
           </p>
         </div>
-      </div>
-      <div class="arrow__wrapper">
-        <a href="#About">
-          <img
-            class="arrow bounce__infinite"
-            src="arrow.png"
-            alt="downwards arrow"
-          />
-        </a>
-      </div>
-    </section>
-
-    <section id="About">
-      <video class="about__video" src="vidpotential video.mp4" controls></video>
-      <div class="about__text--wrapper">
-        <h1 class="about__header">Who is this for?</h1>
-        <p class="about__para">
-          Info Product Sellers, Coaches, Real Estate Agents, or anyone that
-          wants to increase MRR, predictably convert leads, and create a loyal
-          community of customers through short-form content
-        </p>
-        <h1 class="about__header">
-          <p>One hour of recording =</p>
-          <p>numerous pieces of content</p>
-        </h1>
-        <p class="about__para">
-          We come up with the video ideas, script them, guide you through the
-          entire recording process, and edit them. A podcast, youtube video or
-          long-form video becomes short-form social media that you can post
-          across multiple platforms.
-        </p>
-
-        <h1 class="about__header">How it works</h1>
-        <p class="about__para">In only 3 simple steps</p>
-      </div>
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="slide__words">
-              <h1 class="slide__header">Step 1. Film your content</h1>
-              <p class="slide__para">
-                Take an hour to record the content of your choice, and we will
-                prepare ideas for your video and scripts. Our group will mentor
-                you on the best strategies for filming videos while ensuring you
-                get closer to your goals.
-              </p>
-            </div>
-            <img src="camera.png" class="slide__picture" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <div class="slide__words">
-              <h1 class="slide__header">Step 2. We will edit your videos</h1>
-              <p class="slide__para">
-                Our group will transform your content into a multitude of
-                short-form content videos. We can make as few to as many videos
-                as you want. No matter what, you will have enough content to
-                post daily.
-              </p>
-            </div>
-            <img src="scissors.png" class="slide__picture" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <div class="slide__words">
-              <h1 class="slide__header">Step 3. Post The Content</h1>
-              <p class="slide__para">
-                Our team will handle the captions and hashtags. The only thing
-                you need to do is post them.
-              </p>
-            </div>
-            <img src="upload.png" class="slide__picture" alt="" />
-          </div>
+        <div class="about__paragraph">
+          <h2 class="about__header">
+            One hour of recording = numerous pieces of content
+          </h2>
+          <p class="about__body">
+            We come up with the video ideas, script them, guide you through the
+            entire recording process, and edit them. A podcast, youtube video or
+            long-form video becomes short-form social media that you can post
+            across multiple platforms.
+          </p>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-<div class="about__text--wrapper">
-  <h1 class="about__header ">
-    Top Of The Line Short-Form Clips are a No-Brainer For Anyone Who Wants To Grow On Social Media.
-  </h1>
+        <div class="about__paragraph">
+          <h2 class="about__header">How it works</h2>
+          <p class="about__body">in 3 simple steps</p>
+        </div>
 
-</div>
+        <div class="steps__slide">
+          <div class="slide__words">
+            <h3 class="slide-header">Step 1. Film your content</h3>
+            <p class="slide__body">
+              Take an hour to record the content of your choice, and we will
+              prepare ideas for your video and scripts. Our group will mentor
+              you on the best strategies for filming videos while ensuring you
+              get closer to your goals.
+            </p>
+          </div>
+          <img class="slide__image" src="./source/camera.png" alt="" />
+        </div>
+        <div class="steps__slide">
+          <div class="slide__words">
+            <h3 class="slide-header">Step 2. We'll edit your videos</h3>
+            <p class="slide__body">
+              Our group will transform your content into a multitude of
+              short-form content videos. We can make as few to as many videos as
+              you want. No matter what, you will have enough content to post
+              daily.
+            </p>
+          </div>
+          <img class="slide__image" src="./source/scissors.png" alt="" />
+        </div>
+        <div class="steps__slide">
+          <div class="slide__words">
+            <h3 class="slide-header">Step 3. Post The Content</h3>
+            <p class="slide__body">
+              Our team will handle the captions and hashtags. The only thing you
+              need to do is post them.
+            </p>
+          </div>
+          <img class="slide__image" src="./source/upload.png" alt="" />
+        </div>
+        <h2 class="about__header">
+          Top Of The Line Short-Form Clips are a No-Brainer For Anyone Who Wants
+          To Grow On Social Media.
+        </h2>
+      </div>
     </section>
 
-    <section id="example" class="flex-column-center">
-      <h1 class="about__header">
-        Examples of our work
-      </h1>
-      <div class="arrow__wrapper ">
-          <img
-            class="arrow bounce__infinite "
-            src="arrow.png"
-            alt="downwards arrow"
-          />
-      </div>
-      <iframe class="example" src="https://www.youtube.com/embed/TBuMD60V01o" title="Wahab ahmed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      <div class="example__text">
-        <h2 class="example__header">
-          If you want to:
-
-        </h2>
-        <ul class="example__list">
-          <li class="example__list--point"> Save Hours On Content Creation</li>
-          <li class="example__list--point">Explode Your Content Output By Up To 10x</li>
-          <li class="example__list--point">Draw-In New Customers Consistently</li>
-          <li class="example__list--point">Become An Imposing Figure In Your Niche</li>
+    <section id="examples"></section>
+    <div id="contact">
+      <div class="contact__words">
+        <h2 class="about__header">If you want to:</h2>
+        <ul class="contact__list">
+          <li class="contact__list-point">Save Hours On Content Creation</li>
+          <li class="contact__list-point">
+            Explode Your Content Output By Up To 10x
+          </li>
+          <li class="contact__list-point">
+            Draw-In New Customers Consistently
+          </li>
+          <li class="contact__list-point">
+            Become An Imposing Figure In Your Niche
+          </li>
         </ul>
-        <h1 class="lets__chat">
-          Let's chat!
-        </h1>
-        <p class="example__para">
+        <h2 class="about__header">Let's chat!</h2>
+        <p class="about__body">
           Book a call for free with our team below to get started.
         </p>
       </div>
-    </section>
-    <footer>
-      
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    </div>
+    </div>
   </body>
 </html>
