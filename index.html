@@ -1,134 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vidpotential</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script src="script.js" defer ></script>
   </head>
   <body>
-    <div class="wrapper">
-  
-    <section id="landing-page">
-      <header class="navbar">
-        <figure>
-          <div class="logo">logo</div>
-        </figure>
-        <ul class="navigation">
-          <li class="navigation--point"><a href="#about">About</a></li>
-          <li class="navigation--point"><a href="#examples">Examples</a></li>
-          <li class="navigation--point contact">
-            <button class="contact--button">Contact</button>
-          </li>
-        </ul>
-      </header>
-      <div class="title__wrapper">
-        <h1 class="title"><span class="highlight">Vid</span> Potential</h1>
-        <h2 class="subtitle">
-          Skyrocket your Social Media Presence Using Your Short-Form Content's
-          Full Potential
-        </h2>
-      </div>
-    </section>
-    <section id="about">
-      <div class="title__wrapper">
-        <div class="youtube__player--wrapper">
-          <iframe class="youtube-player"
-            src="https://www.youtube-nocookie.com/embed/HA7Qt4Ts64Q"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
 
-        </div>
-        <div class="about__paragraph">
-          <h2 class="about__header">Who is this for?</h2>
-          <p class="about__body">
-            Info Product Sellers, Coaches, Real Estate Agents, or anyone that
-            wants to increase MRR, predictably convert leads, and create a loyal
-            community of customers through short-form content
-          </p>
-        </div>
-        <div class="about__paragraph">
-          <h2 class="about__header">
-            One hour of recording = numerous pieces of content
+      <section id="landing-page">
+        <header class="navbar">
+          <figure>
+            <div class="logo">logo</div>
+          </figure>
+          <ul class="navigation">
+            <li class="navigation--point"><a href="#about">About</a></li>
+            <li class="navigation--point"><a href="#examples">Examples</a></li>
+            <li class="navigation--point contact">
+              <button class="contact--button">Contact</button>
+            </li>
+          </ul>
+        </header>
+        <div class="title__wrapper">
+          <h1 class="title"><span class="highlight">Vid</span> Potential</h1>
+          <h2 class="subtitle">
+            Skyrocket your Social Media Presence by Utilizing Your Short-Form
+            Content's Full Potential
           </h2>
-          <p class="about__body">
-            We come up with the video ideas, script them, guide you through the
-            entire recording process, and edit them. A podcast, youtube video or
-            long-form video becomes short-form social media that you can post
-            across multiple platforms.
-          </p>
         </div>
-        <div class="about__paragraph">
-          <h2 class="about__header">How it works</h2>
-          <p class="about__body">in 3 simple steps</p>
+      </section>
+      <section class="offset hidden"  ></section>
+      <section id="about">
+        <div class="title__wrapper">
+          <h1 class="about__title">About Us</h1>
+          <div class="youtube__player--wrapper">
+            <iframe
+              class="youtube-player"
+              src="https://www.youtube-nocookie.com/embed/HA7Qt4Ts64Q"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="about__paragraph">
+            <h2 class="about__header hidden">Who is this for?</h2>
+            <p class="about__body hidden">
+              Info Product Sellers, Coaches, Real Estate Agents, or anyone that
+              wants to increase MRR, predictably convert leads, and create a
+              loyal community of customers through short-form content
+            </p>
+          </div>
+          <div class="about__paragraph">
+            <h2 class="about__header hidden">
+              One hour of recording = numerous pieces of content
+            </h2>
+            <p class="about__body hidden">
+              We come up with the video ideas, script them, guide you through
+              the entire recording process, and edit them. A podcast, youtube
+              video or long-form video becomes short-form social media that you
+              can post across multiple platforms.
+            </p>
+          </div>
+          <div class="about__paragraph">
+            <h2 class="about__header hidden">How it works</h2>
+            <p class="about__body hidden">in 3 simple steps</p>
+          </div>
+
+          <div class="steps__slide">
+            <div class="slide__words">
+              <h3 class="slide-header">Step 1. Film your content</h3>
+              <p class="slide__body">
+                Take an hour to record the content of your choice, and we will
+                prepare ideas for your video and scripts. Our group will mentor
+                you on the best strategies for filming videos while ensuring you
+                get closer to your goals.
+              </p>
+            </div>
+            <img class="slide__image" src="./source/camera.png" alt="" />
+          </div>
+          <div class="steps__slide">
+            <div class="slide__words">
+              <h3 class="slide-header">Step 2. We'll edit your videos</h3>
+              <p class="slide__body">
+                Our group will transform your content into a multitude of
+                short-form content videos. We can make as few to as many videos
+                as you want. No matter what, you will have enough content to
+                post daily.
+              </p>
+            </div>
+            <img class="slide__image" src="./source/scissors.png" alt="" />
+          </div>
+          <div class="steps__slide">
+            <div class="slide__words">
+              <h3 class="slide-header">Step 3. Post The Content</h3>
+              <p class="slide__body">
+                Our team will handle the captions and hashtags. The only thing
+                you need to do is post them.
+              </p>
+            </div>
+            <img class="slide__image" src="./source/upload.png" alt="" />
+          </div>
         </div>
 
-        <div class="steps__slide">
-          <div class="slide__words">
-            <h3 class="slide-header">Step 1. Film your content</h3>
-            <p class="slide__body">
-              Take an hour to record the content of your choice, and we will
-              prepare ideas for your video and scripts. Our group will mentor
-              you on the best strategies for filming videos while ensuring you
-              get closer to your goals.
-            </p>
+        <section id="examples">
+          <div class="title__wrapper">
+            <h2 class="examples__header">
+              Top Of The Line Short-Form Clips are a No-Brainer For Anyone Who
+              Wants To Grow On Social Media.
+            </h2>
           </div>
-          <img class="slide__image" src="./source/camera.png" alt="" />
-        </div>
-        <div class="steps__slide">
-          <div class="slide__words">
-            <h3 class="slide-header">Step 2. We'll edit your videos</h3>
-            <p class="slide__body">
-              Our group will transform your content into a multitude of
-              short-form content videos. We can make as few to as many videos as
-              you want. No matter what, you will have enough content to post
-              daily.
-            </p>
+          <div class="videos__wrapper">
+            <iframe
+              width="438"
+              height="779"
+              src="https://youtube.com/embed/j71EwT2sk9w?feature=share"
+              frameborder="0"
+              title="YouTube reels player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="438"
+              height="779"
+              src="https://youtube.com/embed/Pjuki7BQBLc?feature=share"
+              frameborder="0"
+              title="YouTube reels player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="438"
+              height="779"
+              src="https://youtube.com/embed/_nrRGJKW87g?feature=share"
+              frameborder="0"
+              title="YouTube reels player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <iframe
+              width="438"
+              height="779"
+              src="https://youtube.com/embed/f3lAegKPV3k?feature=share"
+              frameborder="0"
+              title="YouTube reels player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
-          <img class="slide__image" src="./source/scissors.png" alt="" />
-        </div>
-        <div class="steps__slide">
-          <div class="slide__words">
-            <h3 class="slide-header">Step 3. Post The Content</h3>
-            <p class="slide__body">
-              Our team will handle the captions and hashtags. The only thing you
-              need to do is post them.
-            </p>
-          </div>
-          <img class="slide__image" src="./source/upload.png" alt="" />
-        </div>
-        <h2 class="about__header">
-          Top Of The Line Short-Form Clips are a No-Brainer For Anyone Who Wants
-          To Grow On Social Media.
-        </h2>
-      </div>
-    </section>
+        </section>
 
-    <section id="examples"></section>
-    <div id="contact">
-      <div class="contact__words">
-        <h2 class="about__header">If you want to:</h2>
-        <ul class="contact__list">
-          <li class="contact__list-point">Save Hours On Content Creation</li>
-          <li class="contact__list-point">
-            Explode Your Content Output By Up To 10x
-          </li>
-          <li class="contact__list-point">
-            Draw-In New Customers Consistently
-          </li>
-          <li class="contact__list-point">
-            Become An Imposing Figure In Your Niche
-          </li>
-        </ul>
-        <h2 class="about__header">Let's chat!</h2>
-        <p class="about__body">
-          Book a call for free with our team below to get started.
-        </p>
-      </div>
-    </div>
-    </div>
+        <div id="contact">
+          <div class="contact__wrapper">
+            <div class="contact__wrapper-left">
+              <h2 class="contact__header top">If you want to:</h2>
+              <ul class="contact__list">
+                <li class="contact__list-point">
+                  - <span class="highlight">Save Hours</span> On Content Creation
+                </li>
+                <li class="contact__list-point">
+                  - <span class="highlight">Explode</span> Your Content Output By Up To <span class="highlight">10x</span>
+                </li>
+                <li class="contact__list-point">
+                  - Draw-In <span class="highlight">New Customers</span> Consistently
+                </li>
+                <li class="contact__list-point">
+                  - Become An <span class="highlight">Imposing Figure</span> In Your Niche
+                </li>
+              </ul>
+              <h2 class="contact__header">Let's chat!</h2>
+            </div>
+            <div class="contact__wrapper-right">
+              <!-- <h1 class="contact__header">
+                Book a call for 
+                <span class="highlight">
+                  free 
+
+                </span>
+                with our team below to get started.
+              </h1> -->
+              <!-- Calendly inline widget begin -->
+              <div
+                class="calendly-inline-widget"
+                data-url="https://calendly.com/davidgoula1738/30min"
+
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
+              <!-- Calendly inline widget end -->
+            </div>
+          </div>
+        </div>
+      </section>
   </body>
 </html>
