@@ -13,7 +13,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-     threshold: 1, //the percentage of the content that needs to be on the screen
+     threshold:0.5, //the percentage of the content that needs to be on the screen
     // rootMargin: '-500px' //the margin for the animation to start, you can use negative numbers to shrink the container and positive numbers to increase the container
   }
 );
