@@ -1,4 +1,9 @@
-
+const highlight = document.querySelector(".highlight");
+const footer = document.querySelector(".footer");
+const closeBtn = document.querySelector(".close-btn");
+const contact = document.querySelector("#contact");
+const aboutButton = document.querySelector(".about--button");
+const contactButton = document.querySelector(".contact--button");
 const subtitle = document.querySelector(".subtitle");
 const hiddens = document.querySelectorAll(".hidden");
 // hook that takes a classname or an element as a parameter and returns whether or not it is visible
@@ -13,11 +18,52 @@ const observer = new IntersectionObserver(
     });
   },
   {
-     threshold:0.5, //the percentage of the content that needs to be on the screen
+    threshold: 0.5, //the percentage of the content that needs to be on the screen
     // rootMargin: '-500px' //the margin for the animation to start, you can use negative numbers to shrink the container and positive numbers to increase the container
   }
 );
+
+//give the model "#contact" the "show" class when the "about--button" or "contact--button" is clicked
+aboutButton.addEventListener("click", () => {
+  contact.classList.add("popup");
+});
+contactButton.addEventListener("click", () => {
+  contact.classList.add("popup");
+});
+
+//remove the "popup" class from the model "#contact" when the ".close-btn" button is clicked
+closeBtn.addEventListener("click", () => {
+  contact.classList.remove("popup");
+});
+
+highlight.addEventListener("click", () => {
+  contact.classList.add("popup");
+});
+
+//remove the "popup" class from the modal "#contact" when the user clicks outside the ".contact__wrapper" element
+const contactWrapper = document.querySelector(".contact__wrapper");
+contactWrapper.addEventListener("click", (e) => {
+  if (e.target === contactWrapper) {
+    contact.classList.remove("popup");
+  }
+});
+
+//add the "popup" class from the modal "#contact" when the user scrolls to the footer
+const footerObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        contact.classList.add("popup");
+      }
+    });
+  },
+  {
+    threshold: 0,
+  }
+);
+
+footerObserver.observe(footer);
+
 hiddens.forEach((hidden) => {
-  observer.observe(hidden); 
- 
+  observer.observe(hidden);
 });
