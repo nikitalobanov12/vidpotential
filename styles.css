@@ -19,6 +19,7 @@
   /* position: relative; */
   height: 1080px;
   width: 100%;
+  overflow: hidden;
   background-color: #4d2a88;
   color: #bdbdbd;
   text-shadow: 0 0 5px black;
@@ -460,4 +461,10 @@ opacity: 100;
   opacity: 1;
   transform: translateY(0);
 }
+}
+
+@media (max-width:400px){
+  iframe.hidden{
+    width:370px;
+  }
 }
