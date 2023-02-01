@@ -1,4 +1,4 @@
-const highlight = document.querySelector(".highlight");
+const highlight = document.querySelectorAll(".highlight");
 const footer = document.querySelector(".footer");
 const closeBtn = document.querySelector(".close-btn");
 const contact = document.querySelector("#contact");
@@ -36,9 +36,13 @@ closeBtn.addEventListener("click", () => {
   contact.classList.remove("popup");
 });
 
-highlight.addEventListener("click", () => {
-  contact.classList.add("popup");
+//add the "popup" class from the modal "#contact" when the highlight is clicked
+highlight.forEach((highlight) => {
+  highlight.addEventListener("click", () => {
+    contact.classList.add("popup");
+  });
 });
+
 
 //remove the "popup" class from the modal "#contact" when the user clicks outside the ".contact__wrapper" element
 const contactWrapper = document.querySelector(".contact__wrapper");
