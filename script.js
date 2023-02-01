@@ -26,31 +26,28 @@ const observer = new IntersectionObserver(
 //give the model "#contact" the "show" class when the "about--button" or "contact--button" is clicked
 aboutButton.addEventListener("click", () => {
   contact.classList.add("popup");
+  document.body.style.overflow = "hidden";
 });
 contactButton.addEventListener("click", () => {
   contact.classList.add("popup");
+  document.body.style.overflow = "hidden";
 });
 
 //remove the "popup" class from the model "#contact" when the ".close-btn" button is clicked
 closeBtn.addEventListener("click", () => {
   contact.classList.remove("popup");
+  //set the overflow on the body to visible
+  document.body.style.overflow = "auto";
 });
 
 //add the "popup" class from the modal "#contact" when the highlight is clicked
 highlight.forEach((highlight) => {
   highlight.addEventListener("click", () => {
     contact.classList.add("popup");
+    document.body.style.overflow = "hidden";
   });
 });
 
-
-//remove the "popup" class from the modal "#contact" when the user clicks outside the ".contact__wrapper" element
-const contactWrapper = document.querySelector(".contact__wrapper");
-contactWrapper.addEventListener("click", (e) => {
-  if (e.target === contactWrapper) {
-    contact.classList.remove("popup");
-  }
-});
 
 //add the "popup" class from the modal "#contact" when the user scrolls to the footer
 const footerObserver = new IntersectionObserver(
@@ -58,6 +55,8 @@ const footerObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         contact.classList.add("popup");
+        //disable scrolling on  the body
+        document.body.style.overflow = "hidden";
       }
     });
   },
@@ -71,3 +70,4 @@ footerObserver.observe(footer);
 hiddens.forEach((hidden) => {
   observer.observe(hidden);
 });
+
