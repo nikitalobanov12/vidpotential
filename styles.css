@@ -228,6 +228,7 @@ LANDING PAGE TITLE
   justify-content: space-around;
   text-align: center;
   height: 100vh;
+  transform: translateY(-5vh);
 }
 .slide__words {
   width: 80%;
@@ -237,14 +238,14 @@ LANDING PAGE TITLE
   height: calc(20% + 160px);
   object-fit: contain;
 }
-.slide-header,
-.slide__body {
+.slide-header {
   font-size: calc(2rem + 3vi);
   margin: 24px;
 }
 
 .slide__body {
-  font-size: calc(0.5rem + 2vi);
+  font-size: calc(1rem + 1.5vi);
+  margin:24px;
 }
 
 /*
@@ -254,10 +255,11 @@ LANDING PAGE TITLE
 
 */
 .transition {
-  margin-top: 5vh;
   background-image: url(./source/wave-transition.svg);
   background-size: cover;
-  height: 600px;
+  height: 25vw;
+  margin-bottom:0;
+  transform: translateY(2%);
 }
 
 #examples {
